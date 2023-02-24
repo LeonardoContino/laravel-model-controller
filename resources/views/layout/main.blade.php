@@ -10,6 +10,8 @@
     @yield('cdns')
 </head>
 <body>
+
+    
     @include('includes.header')
 
     <main>

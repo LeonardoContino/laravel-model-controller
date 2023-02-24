@@ -7,9 +7,9 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link @if (Route::is('home')) active @endif" href="{{route('/')}}">Home</a>
-              <a class="nav-link @if (Route::is('about')) active @endif" href="{{route('/about')}}">About</a>
-              <a class="nav-link @if (Route::is('contacts')) active @endif" href="{{route('/contacts')}}">Contacts</a>
+              <a class="nav-link @if (Route::is('home')) active @endif" href="{{url('/')}}">Home</a>
+              <a class="nav-link @if (Route::is('about')) active @endif" href="{{ route('about') }}">About</a>
+              <a class="nav-link @if (Route::is('contacts')) active @endif" href="{{ route('contacts') }}">Contacts</a>
 
             </div>
           </div>
