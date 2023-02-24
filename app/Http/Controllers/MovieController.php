@@ -4,12 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Models\Movie;
+
 class MovieController extends Controller
 {
     // db
     public function home()
     {
-        $movies = config();
+        $movies = Movie::all();
+
+        dd($movies);
 
         return view('home', compact('movies'));
     }
